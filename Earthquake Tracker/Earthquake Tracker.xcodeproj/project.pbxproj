@@ -12,6 +12,10 @@
 		20AAB5A4295F838200263598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB5A2295F838200263598 /* Main.storyboard */; };
 		20AAB5A6295F838800263598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB5A5295F838800263598 /* Assets.xcassets */; };
 		20AAB5A9295F838800263598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB5A7295F838800263598 /* LaunchScreen.storyboard */; };
+		20AAB5B7295F995E00263598 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AAB5B6295F995E00263598 /* TableViewController.swift */; };
+		20AAB5BB296060C500263598 /* EarthquakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AAB5B9296060C500263598 /* EarthquakeCell.swift */; };
+		20AAB5BC296060C500263598 /* EarthquakeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB5BA296060C500263598 /* EarthquakeCell.xib */; };
+		20AAB5C32961DC6400263598 /* Earthquake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AAB5BF2961D25D00263598 /* Earthquake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		20AAB5A5295F838800263598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20AAB5A8295F838800263598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AAB5AA295F838800263598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AAB5B6295F995E00263598 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		20AAB5B9296060C500263598 /* EarthquakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeCell.swift; sourceTree = "<group>"; };
+		20AAB5BA296060C500263598 /* EarthquakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EarthquakeCell.xib; sourceTree = "<group>"; };
+		20AAB5BF2961D25D00263598 /* Earthquake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earthquake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				20AAB5A5295F838800263598 /* Assets.xcassets */,
 				20AAB5A7295F838800263598 /* LaunchScreen.storyboard */,
 				20AAB5AA295F838800263598 /* Info.plist */,
+				20AAB5B6295F995E00263598 /* TableViewController.swift */,
+				20AAB5B9296060C500263598 /* EarthquakeCell.swift */,
+				20AAB5BA296060C500263598 /* EarthquakeCell.xib */,
+				20AAB5BF2961D25D00263598 /* Earthquake.swift */,
 			);
 			path = "Earthquake Tracker";
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			files = (
 				20AAB5A9295F838800263598 /* LaunchScreen.storyboard in Resources */,
 				20AAB5A6295F838800263598 /* Assets.xcassets in Resources */,
+				20AAB5BC296060C500263598 /* EarthquakeCell.xib in Resources */,
 				20AAB5A4295F838200263598 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AAB5C32961DC6400263598 /* Earthquake.swift in Sources */,
 				20AAB5A1295F838200263598 /* ViewController.swift in Sources */,
+				20AAB5B7295F995E00263598 /* TableViewController.swift in Sources */,
+				20AAB5BB296060C500263598 /* EarthquakeCell.swift in Sources */,
 				20AAB59D295F838200263598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

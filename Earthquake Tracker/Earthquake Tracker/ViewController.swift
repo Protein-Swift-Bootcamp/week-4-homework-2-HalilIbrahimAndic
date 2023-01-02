@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+        if let secondVC = storyboard?.instantiateViewController(identifier: "TableViewController") as? TableViewController {
+            secondVC.modalPresentationStyle = .fullScreen
+            present(secondVC, animated: true, completion: nil)
+        }
+    }
+    
 
+    
 }
 
