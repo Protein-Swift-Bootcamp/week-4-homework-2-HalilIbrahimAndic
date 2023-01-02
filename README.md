@@ -1,10 +1,14 @@
-# Earthquake Tracker
+# Harry Potter Wiki
 
-This app provides you the list of current earthquakes in 4 selected ways. Data gathered from USGS is presented in tableview.
+This app is a simple Wiki for Harry Potter enviroment. With this app, you can use these features:
 
-## Earthquakes
-* Latest (Worldwide)
-* Latest (nearby Turkey)
-* Higher than magnitude of 5.0
-* Red alerted (Last 10 years)
+## Features
+Database of
+* Characters
+* Spells
+* Elixirs
+* Ingredients
+
+and give a 
+* Feedback
 
