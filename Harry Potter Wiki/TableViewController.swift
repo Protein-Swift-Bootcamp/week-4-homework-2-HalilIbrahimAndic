@@ -66,18 +66,14 @@ class TableViewController: UIViewController {
     }
 }
 
+//MARK: - TableView - Delegate
 extension TableViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // triggers when cell is clicked
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
 }
 
-//MARK: - UITableViewDataSource
+//MARK: - TableView - Data Source
 extension TableViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -89,21 +85,61 @@ extension TableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpellsCellIdentifier", for: indexPath) as! SpellsCell
-        cell.entryNameLabel.text = entries[indexPath.row].name
+        let indexRow = indexPath.row
         
+        determineContent(cell, indexRow)
+        return cell
+    }
+}
+
+//MARK: - EXTENSION
+extension TableViewController {
+    
+    func determineContent(_ cell: SpellsCell,_ indexRow: Int) {
+        cell.entryNameLabel.text = entries[indexRow].name
+        
+        // Modifies cell content wrt selected button
         switch choiceName {
         case "Characters":
-            cell.entryDescriptionLabel.text = entries[indexPath.row].house
+            cell.entryDescriptionLabel.text = entries[indexRow].house
+            cell.entryImage.image = UIImage(named: "witch")
         case "Spells":
-            cell.entryDescriptionLabel.text = entries[indexPath.row].description
+            cell.entryDescriptionLabel.text = entries[indexRow].description
+            cell.entryImage.image = UIImage(named: "wand2")
         case "Elixirs":
-            cell.entryDescriptionLabel.text = entries[indexPath.row].effect
+            cell.entryDescriptionLabel.text = entries[indexRow].effect
+            cell.entryImage.image = UIImage(named: "cauldron")
         default:
             print("Error: Wrong entry")
         }
         
-        return cell
+        // Modifies cell BG color wrt house of character
+        let house = entries[indexRow].house
+        switch  house {
+        case "Gryffindor":
+            cell.backgroundColor = #colorLiteral(red: 0.4549019608, green: 0, blue: 0.003921568627, alpha: 1)
+            cell.entryNameLabel.textColor = .white
+            cell.entryDescriptionLabel.textColor = .white
+        case "Slytherin":
+            cell.backgroundColor = #colorLiteral(red: 0.1019607843, green: 0.2784313725, blue: 0.1647058824, alpha: 1)
+            cell.entryNameLabel.textColor = .white
+            cell.entryDescriptionLabel.textColor = .white
+        case "Hufflepuff":
+            cell.backgroundColor = #colorLiteral(red: 1, green: 0.8470588235, blue: 0, alpha: 1)
+            cell.entryNameLabel.textColor = .black
+            cell.entryDescriptionLabel.textColor = .black
+        case "Ravenclaw":
+            cell.backgroundColor = #colorLiteral(red: 0.05490196078, green: 0.1019607843, blue: 0.2509803922, alpha: 1)
+            cell.entryNameLabel.textColor = .white
+            cell.entryDescriptionLabel.textColor = .white
+        case "":
+            cell.backgroundColor = .white
+            cell.entryNameLabel.textColor = .black
+            cell.entryDescriptionLabel.textColor = .black
+        default:
+            cell.backgroundColor = .white
+            cell.entryNameLabel.textColor = .black
+            cell.entryDescriptionLabel.textColor = .black
+        }
     }
-    
-    
 }

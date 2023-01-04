@@ -9,13 +9,11 @@ import UIKit
 
 class SpellsCell: UITableViewCell {
 
+    @IBOutlet weak var entryImage: UIImageView!
     @IBOutlet weak var entryNameLabel: UILabel!
     @IBOutlet weak var entryDescriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
-
-    
 }

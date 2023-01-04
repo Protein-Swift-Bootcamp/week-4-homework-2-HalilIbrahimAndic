@@ -16,16 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hpBG2" translatesAutoresizingMaskIntoConstraints="NO" id="oEd-ij-Usa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg7-2B-Ss9">
                                 <rect key="frame" x="20" y="290" width="170" height="90"/>
-                                <color key="backgroundColor" red="0.1182549521" green="0.26182216409999998" blue="0.28520590070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="XqH-Lm-Xs7"/>
                                     <constraint firstAttribute="width" constant="170" id="xbH-pi-TDI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
                                 <state key="normal" title="Characters">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -38,14 +41,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N85-32-4Pi">
                                 <rect key="frame" x="224" y="290" width="170" height="90"/>
-                                <color key="backgroundColor" red="0.1182549521" green="0.26182216409999998" blue="0.28520590070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="6hn-bk-mHM"/>
                                     <constraint firstAttribute="width" constant="170" id="unE-U3-YeB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
                                 <state key="normal" title="Spells">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -58,14 +61,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kZ-D3-kYX" userLabel="Elixirs">
                                 <rect key="frame" x="20" y="414" width="170" height="90"/>
-                                <color key="backgroundColor" red="0.1182549521" green="0.26182216409999998" blue="0.28520590070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="byJ-fc-dX6"/>
                                     <constraint firstAttribute="height" constant="90" id="pKV-1L-Xtu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
                                 <state key="normal" title="Elixirs">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -76,16 +79,16 @@
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao3-nX-Gle"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-Ye-xF9" userLabel="Post a Feedback">
+                            <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-Ye-xF9" userLabel="Post a Feedback">
                                 <rect key="frame" x="224" y="414" width="170" height="90"/>
-                                <color key="backgroundColor" red="0.1182549521" green="0.26182216409999998" blue="0.28520590070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="jtf-lI-thu"/>
                                     <constraint firstAttribute="width" constant="170" id="qmI-xj-Ds3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Post a Feedback">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <state key="normal" title="POST a Feedback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -95,12 +98,16 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.23137254900000001" green="0.20392156859999999" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.38431372549019605" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oEd-ij-Usa" secondAttribute="trailing" id="0Hw-VD-OUC"/>
                             <constraint firstItem="N85-32-4Pi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="2e0-eH-jPO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N85-32-4Pi" secondAttribute="trailing" constant="20" id="7Q8-Dc-2mA"/>
+                            <constraint firstItem="oEd-ij-Usa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Mm-R1-06Q"/>
                             <constraint firstItem="Bgd-Ye-xF9" firstAttribute="top" secondItem="Rg7-2B-Ss9" secondAttribute="bottom" constant="34" id="ESP-oe-MhS"/>
+                            <constraint firstItem="oEd-ij-Usa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jqr-ht-dVI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bgd-Ye-xF9" secondAttribute="trailing" constant="20" id="Kfn-Xx-NKv"/>
+                            <constraint firstAttribute="bottom" secondItem="oEd-ij-Usa" secondAttribute="bottom" id="NwT-Zc-xmU"/>
                             <constraint firstItem="Rg7-2B-Ss9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OGY-NU-7cK"/>
                             <constraint firstItem="5kZ-D3-kYX" firstAttribute="top" secondItem="Rg7-2B-Ss9" secondAttribute="bottom" constant="34" id="Qow-zX-0XY"/>
                             <constraint firstItem="5kZ-D3-kYX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nML-OT-EBx"/>
@@ -153,13 +160,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JSw-xJ-xLw">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.45882352941176469" green="0.094117647058823528" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -173,6 +181,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hpBG2" width="520" height="1125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
