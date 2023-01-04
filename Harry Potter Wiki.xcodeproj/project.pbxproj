@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200505E02964687A001FA503 /* HPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505DF2964687A001FA503 /* HPManager.swift */; };
+		200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505EC2964BBAE001FA503 /* SpellsCell.swift */; };
+		200505EF2964BBAE001FA503 /* SpellsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200505ED2964BBAE001FA503 /* SpellsCell.xib */; };
 		202295532963720700850862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202295522963720700850862 /* AppDelegate.swift */; };
 		202295572963720700850862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202295562963720700850862 /* ViewController.swift */; };
 		2022955A2963720700850862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202295582963720700850862 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200505DF2964687A001FA503 /* HPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPManager.swift; sourceTree = "<group>"; };
+		200505EC2964BBAE001FA503 /* SpellsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCell.swift; sourceTree = "<group>"; };
+		200505ED2964BBAE001FA503 /* SpellsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellsCell.xib; sourceTree = "<group>"; };
 		2022954F2963720600850862 /* Harry Potter Wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		202295522963720700850862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		202295562963720700850862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				2022955D2963720D00850862 /* LaunchScreen.storyboard */,
 				202295602963720D00850862 /* Info.plist */,
 				2022956D296380C200850862 /* TableViewController.swift */,
+				200505DF2964687A001FA503 /* HPManager.swift */,
+				200505EC2964BBAE001FA503 /* SpellsCell.swift */,
+				200505ED2964BBAE001FA503 /* SpellsCell.xib */,
 			);
 			path = "Harry Potter Wiki";
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				2022955F2963720D00850862 /* LaunchScreen.storyboard in Resources */,
 				2022955C2963720D00850862 /* Assets.xcassets in Resources */,
+				200505EF2964BBAE001FA503 /* SpellsCell.xib in Resources */,
 				2022955A2963720700850862 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				202295572963720700850862 /* ViewController.swift in Sources */,
+				200505E02964687A001FA503 /* HPManager.swift in Sources */,
 				2022956F296380C200850862 /* TableViewController.swift in Sources */,
+				200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */,
 				202295532963720700850862 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
