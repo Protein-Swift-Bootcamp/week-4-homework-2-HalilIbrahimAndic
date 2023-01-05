@@ -134,17 +134,37 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nzu-Ed-kBc">
+                                <rect key="frame" x="100" y="400" width="214" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wizard Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guf-PH-Ze8">
+                                <rect key="frame" x="107" y="340" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dc3-3j-s2U"/>
+                                    <constraint firstAttribute="width" constant="200" id="uB8-ix-WcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NSv-8i-XI2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KT0-0K-5nr" firstAttribute="top" secondItem="NSv-8i-XI2" secondAttribute="top" id="0wp-fz-V6V"/>
+                            <constraint firstItem="guf-PH-Ze8" firstAttribute="centerX" secondItem="10k-SN-0Xf" secondAttribute="centerX" id="IHr-we-Kmr"/>
+                            <constraint firstItem="NSv-8i-XI2" firstAttribute="trailing" secondItem="nzu-Ed-kBc" secondAttribute="trailing" constant="100" id="bNI-VH-93E"/>
                             <constraint firstItem="NSv-8i-XI2" firstAttribute="bottom" secondItem="KT0-0K-5nr" secondAttribute="bottom" id="i85-tr-2rG"/>
                             <constraint firstItem="NSv-8i-XI2" firstAttribute="trailing" secondItem="KT0-0K-5nr" secondAttribute="trailing" id="iaB-7w-Nuv"/>
                             <constraint firstItem="KT0-0K-5nr" firstAttribute="leading" secondItem="NSv-8i-XI2" secondAttribute="leading" id="qwm-Vh-5EI"/>
+                            <constraint firstItem="nzu-Ed-kBc" firstAttribute="leading" secondItem="NSv-8i-XI2" secondAttribute="leading" constant="100" id="vck-5e-fY8"/>
+                            <constraint firstItem="nzu-Ed-kBc" firstAttribute="top" secondItem="10k-SN-0Xf" secondAttribute="top" constant="400" id="xtt-Ft-X5W"/>
+                            <constraint firstItem="guf-PH-Ze8" firstAttribute="top" secondItem="10k-SN-0Xf" secondAttribute="top" constant="340" id="ynz-xy-y8G"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="nzu-Ed-kBc" id="5IR-0z-Ast"/>
+                        <outlet property="loadingLabel" destination="guf-PH-Ze8" id="Vgo-bq-XPb"/>
                         <outlet property="tableView" destination="KT0-0K-5nr" id="VyL-5S-XCz"/>
                     </connections>
                 </viewController>
