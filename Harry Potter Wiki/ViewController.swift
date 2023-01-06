@@ -24,6 +24,15 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(tableVC, animated: true)
         }
     }
+    
+    @IBAction func postButton(_ sender: Any) {
+        
+        if let feedbackVC = storyboard?.instantiateViewController(identifier: "feedbackStoryboard") as? FeedbackViewController {
+            
+            feedbackVC.title = "Feedback"
+            navigationController?.pushViewController(feedbackVC, animated: true)
+        }
+    }
 }
 
 //MARK: - EXTENSION

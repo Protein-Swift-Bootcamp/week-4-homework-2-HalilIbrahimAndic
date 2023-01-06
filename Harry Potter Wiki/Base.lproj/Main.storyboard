@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="90" id="XqH-Lm-Xs7"/>
                                     <constraint firstAttribute="width" constant="170" id="xbH-pi-TDI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Characters">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="90" id="6hn-bk-mHM"/>
                                     <constraint firstAttribute="width" constant="170" id="unE-U3-YeB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Spells">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -66,7 +66,7 @@
                                     <constraint firstAttribute="width" constant="170" id="byJ-fc-dX6"/>
                                     <constraint firstAttribute="height" constant="90" id="pKV-1L-Xtu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="Elixirs">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -79,15 +79,17 @@
                                     <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ao3-nX-Gle"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-Ye-xF9" userLabel="Post a Feedback">
+                            <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-Ye-xF9" userLabel="Post a Feedback">
                                 <rect key="frame" x="224" y="414" width="170" height="90"/>
                                 <color key="backgroundColor" red="0.93333333333333335" green="0.8666666666666667" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="jtf-lI-thu"/>
                                     <constraint firstAttribute="width" constant="170" id="qmI-xj-Ds3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
-                                <state key="normal" title="POST a Feedback">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal">
+                                    <string key="title">      POST 
+a Feedback</string>
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -95,6 +97,9 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjV-1Y-0rp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -120,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608.69565217391312" y="14.732142857142856"/>
+            <point key="canvasLocation" x="416" y="15"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hyi-GK-k3e">
@@ -170,7 +175,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDF-7N-oxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.8550724637682" y="14.732142857142856"/>
+            <point key="canvasLocation" x="1119" y="15"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="8Sg-BP-Pim">
+            <objects>
+                <viewController storyboardIdentifier="feedbackStoryboard" id="8b2-ko-uMh" customClass="FeedbackViewController" customModule="Harry_Potter_Wiki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rYM-Y6-RQS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Write your message here..." textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-jU-jKc">
+                                <rect key="frame" x="30" y="319" width="354" height="230"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="cUZ-33-zYc"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5l-bB-ju6">
+                                <rect key="frame" x="47" y="159" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="asr-Kn-eOe"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Feedback Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBr-IN-aFQ">
+                                <rect key="frame" x="15" y="119" width="384" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RTT-ET-62g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ub-7l-pAi">
+                                <rect key="frame" x="110" y="599" width="194" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="zHi-Oi-jHz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="POST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="postButton:" destination="8b2-ko-uMh" eventType="touchUpInside" id="ZVb-Xe-7sQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BWq-aN-gyQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Ub-7l-pAi" firstAttribute="top" secondItem="dfv-jU-jKc" secondAttribute="bottom" constant="50" id="3dt-op-Y9X"/>
+                            <constraint firstItem="BWq-aN-gyQ" firstAttribute="trailing" secondItem="dfv-jU-jKc" secondAttribute="trailing" constant="30" id="4Us-Sa-1pF"/>
+                            <constraint firstItem="BWq-aN-gyQ" firstAttribute="trailing" secondItem="1Ub-7l-pAi" secondAttribute="trailing" constant="110" id="Fph-St-3as"/>
+                            <constraint firstItem="dfv-jU-jKc" firstAttribute="top" secondItem="t5l-bB-ju6" secondAttribute="bottom" constant="10" id="Qny-Ne-tyk"/>
+                            <constraint firstItem="1Ub-7l-pAi" firstAttribute="leading" secondItem="BWq-aN-gyQ" secondAttribute="leading" constant="110" id="Qw3-ht-Sh9"/>
+                            <constraint firstItem="dfv-jU-jKc" firstAttribute="leading" secondItem="BWq-aN-gyQ" secondAttribute="leading" constant="30" id="Qw6-ou-fnQ"/>
+                            <constraint firstItem="t5l-bB-ju6" firstAttribute="top" secondItem="BBr-IN-aFQ" secondAttribute="bottom" id="Wqf-Vn-Mgy"/>
+                            <constraint firstItem="BBr-IN-aFQ" firstAttribute="top" secondItem="BWq-aN-gyQ" secondAttribute="top" constant="75" id="g8u-ZU-o70"/>
+                            <constraint firstItem="BBr-IN-aFQ" firstAttribute="leading" secondItem="BWq-aN-gyQ" secondAttribute="leading" constant="15" id="mD2-Zn-GAt"/>
+                            <constraint firstItem="BWq-aN-gyQ" firstAttribute="trailing" secondItem="BBr-IN-aFQ" secondAttribute="trailing" constant="15" id="rbg-XZ-eh3"/>
+                            <constraint firstItem="t5l-bB-ju6" firstAttribute="centerX" secondItem="rYM-Y6-RQS" secondAttribute="centerX" id="wGd-re-KMA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackTextField" destination="dfv-jU-jKc" id="4ve-7V-XVd"/>
+                        <outlet property="pickerView" destination="t5l-bB-ju6" id="Hva-x2-sMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZ6-du-Zvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="15"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kta-kT-yol">

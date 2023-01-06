@@ -66,15 +66,18 @@ extension TableViewController {
     
     // this function obtain the data
     func fetchData() {
-        //1. Create a URL
+        // 1. Create the URL
         if let url = URL(string: choiceURL) {
+            
+            // 2. Create the Session
+            let session = URLSession.shared
 
-            //2. Create a Request
+            // 3. Create the Request
             var request: URLRequest = .init(url: url)
             request.httpMethod = "GET"
             
-            //3. Give session a task with request
-            let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
+            // 4. Give session a task with the request
+            let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
                 if error != nil {
                     print("Task not completed!")
                     return
@@ -82,11 +85,11 @@ extension TableViewController {
                 
                 // make sure we have data to decode
                 if let data = data {
-                    //call JSON parsing function
+                    //call our JSON parsing function
                     self.parseJson(data)
                 }
             }
-            //4. Start the task
+            //5. Start the task
             task.resume()
         }
     }

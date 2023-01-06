@@ -10,6 +10,7 @@
 		200505E02964687A001FA503 /* HPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505DF2964687A001FA503 /* HPManager.swift */; };
 		200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505EC2964BBAE001FA503 /* SpellsCell.swift */; };
 		200505EF2964BBAE001FA503 /* SpellsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200505ED2964BBAE001FA503 /* SpellsCell.xib */; };
+		2013D37A2966F13700D890A5 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013D3792966F13700D890A5 /* FeedbackViewController.swift */; };
 		202295532963720700850862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202295522963720700850862 /* AppDelegate.swift */; };
 		202295572963720700850862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202295562963720700850862 /* ViewController.swift */; };
 		2022955A2963720700850862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202295582963720700850862 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		200505DF2964687A001FA503 /* HPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPManager.swift; sourceTree = "<group>"; };
 		200505EC2964BBAE001FA503 /* SpellsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCell.swift; sourceTree = "<group>"; };
 		200505ED2964BBAE001FA503 /* SpellsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellsCell.xib; sourceTree = "<group>"; };
+		2013D3792966F13700D890A5 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		2022954F2963720600850862 /* Harry Potter Wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Harry Potter Wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		202295522963720700850862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		202295562963720700850862 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				200505DF2964687A001FA503 /* HPManager.swift */,
 				200505EC2964BBAE001FA503 /* SpellsCell.swift */,
 				200505ED2964BBAE001FA503 /* SpellsCell.xib */,
+				2013D3792966F13700D890A5 /* FeedbackViewController.swift */,
 			);
 			path = "Harry Potter Wiki";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				202295572963720700850862 /* ViewController.swift in Sources */,
+				2013D37A2966F13700D890A5 /* FeedbackViewController.swift in Sources */,
 				200505E02964687A001FA503 /* HPManager.swift in Sources */,
 				2022956F296380C200850862 /* TableViewController.swift in Sources */,
 				200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */,
