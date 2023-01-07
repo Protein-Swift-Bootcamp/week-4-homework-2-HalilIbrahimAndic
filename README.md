@@ -15,13 +15,13 @@ of the book series Harry Potter (by J.K. Rowling) and give a
 
 by using the API presented in https://wizard-world-api.herokuapp.com/swagger/index.html.
 
-![Home Page](HPW-home.png)
+![Home Page](Harry%20Potter%20Wiki/Supporting%20Files/images/HPW-home.png)
 
-![Characters](HPW-characters.png)
+![Characters](Harry%20Potter%20Wiki/Supporting%20Files/images/HPW-characters.png)
 
-![Spells](HPW-spells.png)
+![Spells](Harry%20Potter%20Wiki/Supporting%20Files/images/HPW-spells.png)
 
-![Elixirs](HPW-elixirs.png)
+![Elixirs](Harry%20Potter%20Wiki/Supporting%20Files/images/HPW-elixirs.png)
 
-![Feedback](HPW-feedback.png)
+![Feedback](Harry%20Potter%20Wiki/Supporting%20Files/images/HPW-feedback.png)
 
