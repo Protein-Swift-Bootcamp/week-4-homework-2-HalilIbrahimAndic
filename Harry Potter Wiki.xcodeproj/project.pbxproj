@@ -64,19 +64,51 @@
 		202295512963720600850862 /* Harry Potter Wiki */ = {
 			isa = PBXGroup;
 			children = (
-				202295522963720700850862 /* AppDelegate.swift */,
-				202295562963720700850862 /* ViewController.swift */,
-				202295582963720700850862 /* Main.storyboard */,
-				2022955B2963720D00850862 /* Assets.xcassets */,
-				2022955D2963720D00850862 /* LaunchScreen.storyboard */,
-				202295602963720D00850862 /* Info.plist */,
-				2022956D296380C200850862 /* TableViewController.swift */,
-				200505DF2964687A001FA503 /* HPManager.swift */,
-				200505EC2964BBAE001FA503 /* SpellsCell.swift */,
-				200505ED2964BBAE001FA503 /* SpellsCell.xib */,
-				2013D3792966F13700D890A5 /* FeedbackViewController.swift */,
+				203AF90C2968A60000A66052 /* Model */,
+				203AF90B2968A5F300A66052 /* View */,
+				203AF9082968A5AF00A66052 /* Controller */,
+				203AF90A2968A5C900A66052 /* Supporting Files */,
 			);
 			path = "Harry Potter Wiki";
+			sourceTree = "<group>";
+		};
+		203AF9082968A5AF00A66052 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				202295562963720700850862 /* ViewController.swift */,
+				2022956D296380C200850862 /* TableViewController.swift */,
+				2013D3792966F13700D890A5 /* FeedbackViewController.swift */,
+				200505EC2964BBAE001FA503 /* SpellsCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		203AF90A2968A5C900A66052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				202295602963720D00850862 /* Info.plist */,
+				2022955D2963720D00850862 /* LaunchScreen.storyboard */,
+				2022955B2963720D00850862 /* Assets.xcassets */,
+				202295522963720700850862 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		203AF90B2968A5F300A66052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				202295582963720700850862 /* Main.storyboard */,
+				200505ED2964BBAE001FA503 /* SpellsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		203AF90C2968A60000A66052 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				200505DF2964687A001FA503 /* HPManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKJZQD9WU4;
-				INFOPLIST_FILE = "Harry Potter Wiki/Info.plist";
+				INFOPLIST_FILE = "Harry Potter Wiki/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UKJZQD9WU4;
-				INFOPLIST_FILE = "Harry Potter Wiki/Info.plist";
+				INFOPLIST_FILE = "Harry Potter Wiki/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

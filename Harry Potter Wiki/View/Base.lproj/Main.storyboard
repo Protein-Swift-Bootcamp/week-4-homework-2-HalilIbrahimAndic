@@ -125,7 +125,7 @@ a Feedback</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="15"/>
+            <point key="canvasLocation" x="507" y="15"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hyi-GK-k3e">
@@ -175,7 +175,7 @@ a Feedback</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDF-7N-oxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="15"/>
+            <point key="canvasLocation" x="1265" y="-350"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="8Sg-BP-Pim">
@@ -253,7 +253,7 @@ a Feedback</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZ6-du-Zvl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="15"/>
+            <point key="canvasLocation" x="1264" y="340"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kta-kT-yol">
