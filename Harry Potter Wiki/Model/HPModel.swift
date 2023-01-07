@@ -6,6 +6,7 @@
 
 import Foundation
 
-struct HPManager: Codable {
+//Setup model for incoming data
+struct HPModel: Codable {
     let name, description, house, effect: String?
 }

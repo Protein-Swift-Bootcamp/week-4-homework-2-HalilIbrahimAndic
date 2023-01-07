@@ -23,7 +23,7 @@
                             <constraint firstAttribute="height" constant="50" id="wXr-Fr-seD"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvV-Xh-tdB">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvV-Xh-tdB">
                         <rect key="frame" x="75" y="10" width="336" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="7yb-Go-SX9"/>
@@ -32,11 +32,8 @@
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48v-cM-RH2" userLabel="Spell Description Label">
-                        <rect key="frame" x="75" y="30" width="336" height="70"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="70" id="crY-do-HsQ"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48v-cM-RH2" userLabel="Spell Description Label">
+                        <rect key="frame" x="75" y="30" width="336" height="65"/>
                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -46,6 +43,7 @@
                     <constraint firstItem="48v-cM-RH2" firstAttribute="top" secondItem="VvV-Xh-tdB" secondAttribute="bottom" id="15z-d3-uFQ"/>
                     <constraint firstItem="VvV-Xh-tdB" firstAttribute="leading" secondItem="Dad-aw-os1" secondAttribute="trailing" constant="15" id="6Fp-tT-171"/>
                     <constraint firstAttribute="trailing" secondItem="VvV-Xh-tdB" secondAttribute="trailing" constant="10" id="JgS-6h-OUq"/>
+                    <constraint firstAttribute="bottom" secondItem="48v-cM-RH2" secondAttribute="bottom" constant="5" id="QrM-TI-eOm"/>
                     <constraint firstItem="VvV-Xh-tdB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cAr-tO-eaK"/>
                     <constraint firstAttribute="trailing" secondItem="48v-cM-RH2" secondAttribute="trailing" constant="10" id="doc-EJ-SBv"/>
                     <constraint firstItem="Dad-aw-os1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="foF-Q4-3gm"/>

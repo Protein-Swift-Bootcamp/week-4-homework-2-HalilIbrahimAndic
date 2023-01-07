@@ -14,8 +14,8 @@ class TableViewController: UIViewController {
     @IBOutlet weak var loadingLabel: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    // Create each row entry with respect to (wrt) declared Model: HPManager
-    private var entries: [HPManager] = []
+    // Create each row entry with respect to (wrt) declared Model: HPModel
+    private var entries: [HPModel] = []
     var choiceName: String = ""
     var choiceURL: String = ""
     
@@ -41,10 +41,6 @@ extension TableViewController: UITableViewDelegate {
 
 extension TableViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entries.count
     }
@@ -64,7 +60,7 @@ extension TableViewController: UITableViewDataSource {
 //MARK: - Controller Extensions
 extension TableViewController {
     
-    // this function obtain the data
+    // this function obtains the data
     func fetchData() {
         // 1. Create the URL
         if let url = URL(string: choiceURL) {
@@ -97,8 +93,8 @@ extension TableViewController {
     // this function decodes incoming data
     func parseJson(_ data: Data) {
         do {
-            // decode incoming data wrt my Model declared in HPManager
-            let entries = try JSONDecoder().decode([HPManager].self, from: data)
+            // decode incoming data wrt my setup declared in HPModel
+            let entries = try JSONDecoder().decode([HPModel].self, from: data)
             self.entries = entries
             
             // Things to do when the data is ready to show
@@ -113,7 +109,7 @@ extension TableViewController {
         }
     }
     
-    // This functions modifies the UI wrt the clicked button and incoming data
+    // This functions modifies the cell wrt the clicked button and incoming data
     func determineContent(_ cell: SpellsCell,_ indexRow: Int) {
         
         // Change the Name label (upper one)
@@ -153,10 +149,6 @@ extension TableViewController {
             cell.backgroundColor = #colorLiteral(red: 0.05490196078, green: 0.1019607843, blue: 0.2509803922, alpha: 1)
             cell.entryNameLabel.textColor = .white
             cell.entryDescriptionLabel.textColor = .white
-        case "":
-            cell.backgroundColor = .white
-            cell.entryNameLabel.textColor = .black
-            cell.entryDescriptionLabel.textColor = .black
         default:
             cell.backgroundColor = .white
             cell.entryNameLabel.textColor = .black

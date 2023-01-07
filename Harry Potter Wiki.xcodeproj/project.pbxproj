@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200505E02964687A001FA503 /* HPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505DF2964687A001FA503 /* HPManager.swift */; };
+		200505E02964687A001FA503 /* HPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505DF2964687A001FA503 /* HPModel.swift */; };
 		200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200505EC2964BBAE001FA503 /* SpellsCell.swift */; };
 		200505EF2964BBAE001FA503 /* SpellsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200505ED2964BBAE001FA503 /* SpellsCell.xib */; };
 		2013D37A2966F13700D890A5 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013D3792966F13700D890A5 /* FeedbackViewController.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		200505DF2964687A001FA503 /* HPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPManager.swift; sourceTree = "<group>"; };
+		200505DF2964687A001FA503 /* HPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPModel.swift; sourceTree = "<group>"; };
 		200505EC2964BBAE001FA503 /* SpellsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCell.swift; sourceTree = "<group>"; };
 		200505ED2964BBAE001FA503 /* SpellsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellsCell.xib; sourceTree = "<group>"; };
 		2013D3792966F13700D890A5 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		203AF90C2968A60000A66052 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				200505DF2964687A001FA503 /* HPManager.swift */,
+				200505DF2964687A001FA503 /* HPModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			files = (
 				202295572963720700850862 /* ViewController.swift in Sources */,
 				2013D37A2966F13700D890A5 /* FeedbackViewController.swift in Sources */,
-				200505E02964687A001FA503 /* HPManager.swift in Sources */,
+				200505E02964687A001FA503 /* HPModel.swift in Sources */,
 				2022956F296380C200850862 /* TableViewController.swift in Sources */,
 				200505EE2964BBAE001FA503 /* SpellsCell.swift in Sources */,
 				202295532963720700850862 /* AppDelegate.swift in Sources */,
